@@ -11,4 +11,6 @@ Kubernetes Stuff for my home server
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 helm install kube-prometheus-v1 prometheus-community/kube-prometheus-stack
+
+kubectl --namespace default get pods -l "release=kube-prometheus-v1"
 ```
